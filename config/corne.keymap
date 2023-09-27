@@ -22,47 +22,47 @@
             // -----------------------------------------------------------------------------------------
             // | TAB  |  A  |  Z  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | ESC  |  Q  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  W  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHIFT  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            // | SHFT |  W  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHIFT|
+            //                    | CTRL| LWR | SPC |   | ENT | RSE  | ALT |
 
             label = "Base";
             bindings = <
-    &kp TAB     &kp FR_A    &kp FR_Z   &kp FR_E  &kp FR_R  &kp FR_T      &kp FR_Y  &kp FR_U  &kp FR_I     &kp FR_O    &kp FR_P     &kp BSPC
-    &kp ESC     &kp FR_Q    &kp FR_S   &kp FR_D  &kp FR_F  &kp FR_G      &kp FR_H  &kp FR_J  &kp FR_K     &kp FR_L    &kp FR_SCLN  &kp FR_QUOT
-    &kp LSHFT   &kp FR_W    &kp FR_X   &kp FR_C  &kp FR_V  &kp FR_B      &kp FR_N  &kp FR_M  &kp FR_COMM  &kp FR_DOT  &kp FR_SLSH  &kp RSHIFT
-                                       &kp LCTRL &mo 1     &kp SPACE     &kp RET  &mo 2   &kp RALT
+    &kp TAB    &kp FR_A  &kp FR_Z  &kp FR_E  &kp FR_R  &kp FR_T      &kp FR_Y  &kp FR_U  &kp FR_I     &kp FR_O    &kp FR_P     &kp BSPC
+    &kp ESC    &kp FR_Q  &kp FR_S  &kp FR_D  &kp FR_F  &kp FR_G      &kp FR_H  &kp FR_J  &kp FR_K     &kp FR_L    &kp FR_SCLN  &kp FR_QUOT
+    &kp LSHFT  &kp FR_W  &kp FR_X  &kp FR_C  &kp FR_V  &kp FR_B      &kp FR_N  &kp FR_M  &kp FR_COMM  &kp FR_DOT  &kp FR_SLSH  &kp RSHIFT
+                                   &kp LCTRL &mo 1     &kp SPACE     &kp RET   &mo 2     &kp RALT
             >;
         };
 
         Lower {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT | HOME|      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             label = "Lower";
             bindings = <
-      &trans    &trans    &kp UP     &trans     &trans     &trans     &kp N7     &kp N8    &kp N9   &kp N0  &kp HOME   &kp F1
-      &trans  &kp LEFT  &kp DOWN  &kp RIGHT     &trans     &trans     &kp N4     &kp N5    &kp N6   &trans    &trans  &kp F10
-
-                                   &kp LGUI     &trans  &kp SPACE    &kp RET  &kp RCTRL  &kp RALT
+    &trans  &kp FR_1  &kp FR_2  &kp FR_3  &kp FR_4  &kp FR_5     &kp FR_6  &kp FR_7  &kp FR_8  &kp FR_9  &kp FR_0   &kp BSPC
+    &trans  &trans    &trans    &trans    &trans    &trans       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp HOME   &kp F1
+    &trans  &trans    &trans    &trans    &trans    &trans       &trans    &trans    &trans    &trans    &trans     &trans
+                                &kp LGUI  &trans    &kp SPACE    &kp RET  &kp RCTRL  &kp RALT
             >;
         };
 
         Raise {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // |  ~   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  (  |  )  |  *  | BKSP |
+            // | CTRL |     |     |     |  <  |  >  |   |  -  |  =  |  [  |  ]  |  \  |  "   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            //                    | GUI | ALT | SPC |   | ENT |     | ALT |
 
             label = "Raise";
             bindings = <
-    &trans      &kp EXCL      &kp AT    &kp HASH      &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR    &kp DEL
-    &trans    &bt BT_CLR  &bt BT_PRV  &bt BT_NXT        &trans      &to 3    &kp UNDER  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-    &trans  &out OUT_TOG      &trans      &trans        &trans     &trans    &kp MINUS   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                        &kp LGUI  &kp LEFT_ALT  &kp SPACE      &kp RET     &trans         &kp RALT
+    &trans  &kp FR_EXLM  &kp FR_AT  &kp FR_HASH  &kp FR_DLR   &kp FR_PERC    &kp FR_CIRC  &kp FR_AMPR  &kp FR_LPRN  &kp FR_RPRN  &kp FR_ASTR  &kp DEL
+    &trans  &trans       &trans     &trans       &kp FR_LABK  &to FR_RABK    &kp FR_MINS  &kp FR_EQL   &kp FR_LBRC  &kp FR_RBRC  &kp FR_BSLS  &kp FR_DIAE
+    &trans  &trans       &trans     &trans       &trans       &trans         &kp FR_UNDS  &kp FR_PLUS  &kp FR_LCBR  &kp FR_RCBR  &kp FR_PIPE  &kp FR_TILD
+                                    &kp LGUI     &kp LEFT_ALT &kp SPACE      &kp RET      &trans       &kp RALT
             >;
         };
 
