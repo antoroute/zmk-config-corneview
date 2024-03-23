@@ -16,7 +16,7 @@
                 combo_activate_layer_5 {
                 compatible = "zmk,combo";
                 label = "activate_layer_5";
-                key-positions = <&kp RET &kp LGUI>;
+                key-positions = <&kp BSPC  &kp LGUI>;
                 timeout-ms = <2000>; // Temps avant que le combo soit considéré comme "manqué"
                 bindings = <&tog 5>;
                 };
