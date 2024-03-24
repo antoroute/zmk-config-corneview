@@ -16,7 +16,7 @@
                 combo_activate_layer_5 {
                 compatible = "zmk,combo";
                 label = "activate_layer_5";
-                key-positions = <&kp BSPC  &kp LGUI>;
+                key-positions = <37 41>;
                 timeout-ms = <2000>; // Temps avant que le combo soit considéré comme "manqué"
                 bindings = <&tog 5>;
                 };
@@ -55,7 +55,7 @@
                 bindings = <
         &kp FR_W         &kp FR_B     &kp FR_EACU &kp FR_P &kp FR_O    &kp FR_EGRV        &kp FR_CIRC &kp FR_V    &kp FR_D  &kp FR_L  &kp FR_J  &kp FR_Z
         &hm CAPSLOCK TAB &kp FR_A     &kp FR_U  &kp FR_I   &lt 4 FR_E &kp FR_COMM        &kp FR_C    &lt 3 FR_T &kp FR_S  &kp FR_R  &kp FR_N  &kp FR_M
-        &kp LCTRL        &kp FR_AGRV  &kp FR_Y  &kp FR_X   &kp FR_DOT  &kp FR_K           &kp FR_QUOT &kp FR_Q    &kp FR_G  &kp FR_H  &kp FR_F  &hm RSHIFT FR_C
+        &kp LCTRL        &kp FR_AGRV  &kp FR_Y  &kp FR_X   &kp FR_DOT  &kp FR_K           &kp FR_QUOT &kp FR_Q    &kp FR_G  &kp FR_H  &kp FR_F  &kp RSHIFT
                                                 &kp LGUI  &lt 1 SPACE &hm LEFT_ALT RET     &lt 2 RET &kp BSPC   &hm RIGHT_ALT ESC
                 >;
                 };
@@ -130,4 +130,8 @@
                 >;
                 };
         };
+};
+
+&nice_view_spi {
+    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
 };
