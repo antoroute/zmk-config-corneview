@@ -16,6 +16,7 @@
                 compatible = "zmk,combo";
                 combo_activate_layer_5 {
                         label = "activate_layer_5";
+                        timeout-ms = <50>;
                         key-positions = <0 1>;
                         bindings = <&tog 5>;
                 };
