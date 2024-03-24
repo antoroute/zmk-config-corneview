@@ -16,7 +16,7 @@
                 compatible = "zmk,combo";
                 combo_activate_layer_5 {
                         label = "activate_layer_5";
-                        key-positions = <36 40>;
+                        key-positions = <0 1>;
                         bindings = <&tog 5>;
                 };
         };
@@ -115,7 +115,7 @@
         &trans  &trans   &trans   &trans   &trans   &trans         &kp NUMBER_4 &kp FR_7 &kp FR_8 &kp FR_9 &kp FR_SLSH &trans
         &trans  &trans   &trans   &trans   &trans   &trans         &kp FR_HASH &kp FR_4 &kp FR_5 &kp FR_6 &kp FR_ASTR &kp FR_EQL
         &trans  &trans   &trans   &trans   &trans   &trans         &kp FR_PERC &kp FR_1 &kp FR_2 &kp FR_3 &kp FR_MINS &trans
-                                  &trans   &trans   &trans         &trans   &kp FR_PLUS  &trans
+                                  &trans   &trans   &trans         &kp FR_0   &kp FR_PLUS  &trans
                 >;
                 };
 
