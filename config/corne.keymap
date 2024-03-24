@@ -17,7 +17,6 @@
                 combo_activate_layer_5 {
                         label = "activate_layer_5";
                         key-positions = <36 40>;
-                        timeout-ms = <2000>; // Temps avant que le combo soit considéré comme "manqué"
                         bindings = <&tog 5>;
                 };
         };
