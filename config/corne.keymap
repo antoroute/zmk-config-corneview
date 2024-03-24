@@ -16,7 +16,7 @@
                 combo_activate_layer_5 {
                 compatible = "zmk,combo";
                 label = "activate_layer_5";
-                key-positions = <37 41>;
+                key-positions = <36 40>;
                 timeout-ms = <2000>; // Temps avant que le combo soit considéré comme "manqué"
                 bindings = <&tog 5>;
                 };
@@ -98,7 +98,7 @@
                 //                     | GUI |     | ALT/ENT |   | HYPER/SPACE | BKSP |    |
                 label = "Dev";
                 bindings = <
-        &kp FR_DLR   &kp FR_DQUO  &trans      &trans       &kp FR_LPRN  &kp FR_RPRN     &trans  &trans   &trans   &trans   &trans   &trans
+        &kp FR_DLR   &kp FR_DQUO  &kp FR_UNDS   &kp FR_MINS       &kp FR_LPRN  &kp FR_RPRN     &trans  &trans   &trans   &trans   &trans   &trans
         &kp FR_EXLM  &kp FR_AMPR  &kp LESS_THAN &kp GREATER_THAN  &kp FR_LBRC  &kp FR_RBRC     &trans  &trans   &trans   &trans   &trans   &trans
         &kp FR_CIRC  &kp FR_PIPE  &kp FR_BSLS &kp FR_SLSH  &kp FR_LCBR  &kp FR_RCBR     &trans  &trans   &trans   &trans   &trans   &trans
                                                 &trans       &kp FR_MINS  &trans          &trans  &trans   &trans
